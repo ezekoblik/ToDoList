@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Nunito:ital,wght@0,200;0,300;0,700;1,200;1,300;1,600&family=Roboto+Mono:ital,wght@0,200;0,400;0,500;1,100;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo Lista</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="container-form">
+        <div class="container-text">
+          <p>LISTADO DE TAREAS</p>
+        </div>
+        <form class="formulario">
+          <input
+            type="text"
+            id="input"
+            autofocus
+            placeholder="Ingresa una tarea"
+          />
+          <button id="btn">ADD</button>
+        </form>
+      </section>
+      <!-- <section id="parrafo" class="parrafo-text">
+        <p class="text">No hay tareas pendientes</p>
+      </section> -->
+      <section id="listado"></section>
+
+      <template id="template">
+        <div>
+          <ul class="lista">
+            <li class="item">comida para perro</li>
+            <div class="lista-btn">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </ul>
+        </div>
+      </template>
+    </main>
+
+    <script src="applist.js"></script>
+    <!-- <script src="list.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/367866b58a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
